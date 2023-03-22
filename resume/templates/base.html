@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% if title %}
+        <title>StarkBak | {{ title }}</title>
+    {% else %}
+        <title>StarkBak</title>
+    {% endif %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @font-face {
+            font-family: myfont;
+            src: url("{{ url_for('static', filename='fonts/Alkatra.ttf') }}");
+        }
+        body {
+            font-family: myfont, serif;
+        }
+
+        header {
+            height: 350px;
+        }
+
+        header .btn {
+            box-shadow: 1px 1px 4px black;
+        }
+        section {
+            transform: translateY(-220px);
+        }
+    </style>
+</head>
+<body class="bg-dark text-white">
+    <header class="bg-success p-4 col-lg-12">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-7 col-6">
+                    <h3 class="fw-bold">Muhammad Salim Baktash</h3>
+                    <h6 class="fw-bold">Full Stack Developer</h6>
+                </div>
+                <div class="col-lg-4  col-md-4 col-sm-5 col-6">
+                    <div class="float-end">
+                        <a target="_blank" href="https://twitter.com/StarkBakTec"
+                           class="btn rounded-pill"><i class="fa fa-twitter"></i></a>
+                        <a target="_blank" href="https://github.com/SSTechInd-Tec"
+                           class="btn rounded-pill"><i class="fa fa-github"></i></a>
+                        <a target="_blank" href="https://t.me/StarkBak"
+                           class="btn rounded-pill"><i class="fa fa-telegram"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/starkbaktec/"
+                           class="btn rounded-pill"><i class="fa fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="col-lg-12">
+        <div class="container">
+            {% block content %}
+            {% endblock content %}
+        </div>
+    </section>
+    <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.js') }}"></script>
+</body>
+</html>

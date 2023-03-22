@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div class="row bg-white p-3 text-dark rounded">
+        <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+            <img src="{{ url_for('static', filename='img/me/me.jpg') }}" style="width: 100%; height: auto" alt="">
+        </div>
+        <div class="col-12 col-sm-12 col-md-8 col-lg-8 p-2">
+            <div style="width: 100%;">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-4 p-2 bg-success text-white text-center fw-bold mb-3">
+                    Hello & Welcome
+                </div>
+                <h2>I'M <span class="text-success">SALIM BAKTASH</span></h2>
+                <h5>Full Stack Developer & Coffee Addict</h5>
+                <hr>
+                <table class="table table-borderless table-responsive">
+                    <tr><td>Nickname</td><td>StarkBak</td></tr>
+                    <tr><td>Age</td><td>17</td></tr>
+                    <tr><td>Address</td><td>First District of Khair Khanah, Kabul AFG</td></tr>
+                    <tr><td>Phone</td><td>+(93) 787311374</td></tr>
+                    <tr><td>Email</td><td>sstechnologyindtec@gmail.com</td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="text-center fw-bold mt-4 mb-4">Know Me Better</h3>
+
+    <div class="row bg-white p-0 text-dark rounded">
+        <div class="row">
+            <div class="col-lg-6 p-4">
+                <h4>Who am I?</h4>
+                <p style="text-align: justify">
+                    My name is Muhammad Salim Baktash and I like that to call me StarkBak.
+                    My hobby is at first place is coding and learning and at the second place
+                    walking through the social media or sleeping. I Start coding when I was 13 years
+                    old and now I' 17 years old. Now I'm development instructor at Top In Town Technology.
+                    I taught  development for 1 year in this academy.
+                </p>
+                <h4>My Skills</h4>
+                <p style="text-align: justify">
+                    As you know I'm a full stack developer, I have about 4 years of experience in
+                    development and programming with python and other technologies use for development.
+                    My original development language is python I have been worked with python for more or
+                    less than 4 years. So why python? Because the first programming language that I learned
+                    was python and after that I start other languages like C/C++, Java and others. I rank my
+                    knowledge in these categories:
+                </p>
+            </div>
+            <div class="col-lg-6 p-4">
+                <div class="mt-3 mb-5">
+                    <h6 class="fw-bold">Front-End<span class="float-end">85%</span></h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" style="width:85%"></div>
+                    </div>
+                </div>
+                <div class="mt-3 mb-5">
+                    <h6 class="fw-bold">Back-End<span class="float-end">90%</span></h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" style="width:90%"></div>
+                    </div>
+                </div>
+                <div class="mt-3 mb-5">
+                    <h6 class="fw-bold">Desktop Development<span class="float-end">80%</span></h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" style="width:80%"></div>
+                    </div>
+                </div>
+
+                <div class="mt-3 mb-5">
+                    <h6 class="fw-bold">Database Development<span class="float-end">90%</span></h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" style="width:90%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h3 class="text-center fw-bold mt-4 mb-4">Tools I Use</h3>
+
+    <div class="row p-3 rounded text-dark bg-white text-center">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-6 p-2">
+            <h6>Programming Languages</h6>
+            <img src="https://skillicons.dev/icons?i=py,java,cpp,php"  alt=""/>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-6 p-2">
+            <h6>Web Development</h6>
+            <img src="https://skillicons.dev/icons?i=html,css,js,wordpress"  alt=""/>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-6 p-2">
+            <h6>Database</h6>
+            <img src="https://skillicons.dev/icons?i=sqlite,mysql,mongodb,redis"  alt=""/>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-6 col-6 p-2">
+            <h6>Frameworks</h6>
+            <img src="https://skillicons.dev/icons?i=jquery,bootstrap,flask,selenium"  alt=""/>
+        </div>
+    </div>
+{% endblock content %}
